@@ -1,3 +1,5 @@
+// nimic
+
 var countDownDate = new Date("Aug 08, 2020 00:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
