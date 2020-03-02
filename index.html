@@ -1,68 +1,228 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-/*body {
-  background-image: url('ch2.jpg');
-}*/
+	<head>
+		<title>Invitatie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+			   crossorigin="anonymous">
+	</head>
 
-body {
-    position: relative;
-    /* top: -50%; */
-    top: 0;
-    /* left: -50%; */
-    width: 60%;
-    height: 60%;
-    background-size: cover;
-    background-image: url('ch1.jpg');
-}
-</style>
-</head>
-<body>
+	<body>
 
-<h2>Save the date</h2>
-<h1> 08.08.2020 </h1>
+		<!-- bulina -->
+			<header id="header">
+				<div class="inner">
+					<div class="content" >
+							<h1 class="inline"> Alina </h1><h2 class="inline">&</h2><h1 class="inline"> Paul </h1>
+							<!-- <h2> Va invitam sa ne fiti alaturi </h3>
+									<h2> in data de </h4> -->
+									<!-- <h2> 08 08 2020 </h2> -->
+							<a href="#" class="button" style="text-decoration: none;"><span> 08 08 2020 </span></a>
+						
+					</div>
+					<a href="#" class="button hidden"><span>08 08 2020</span></a>
+				</div>
+			</header>
 
- AU mai ramas.. 
-<p id="demo"></p>
+				<!-- banner/amr -->
+				<div class="timer">
+					<h1 class="titlu" style="text-align: center;"> au mai ramas </h1>
+					<p id="count_days" class="paragraf txt_grad"></p>
+					<h1 class="titlu" style="text-align: center;"> pana la</h1>
+					<h1 class="details" style="text-align: center; font-size: 3rem;"> 08.08.2020</h1>
+				</div>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Aug 08, 2020 00:00:00").getTime();
+				<!-- delatii program -->
+				<section id="one" class="wrapper">
+					<div class="inner flex flex-3">
+						<div class="flex-item left">
+							<div class="row">
+								<!-- background foto -->
+								<div class="col-sm-3">
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+								</div>
+								<!-- text -->
+								<div class="col-sm-9">
+									<div class="bul1">
+										<h3>Cununia religioasa</h3>
+										<h4 class="details"> incepand cu ora 15.00</h4>
+										<p>Biserica Adormirea maicii domnului<br />  STrada  Principala, localitatea Pildesti</p>
+									</div>
+									<div class="bul1">
+										<h3>Cununia civila</h3>
+										<h4 class="details"> incepand cu ora 14.00</h4>
+										<p>In gradina raiului<br /> Strada trandafirilor, nr 35, loc. Pildesti</p>
+									</div>
+									<div class="bul1">
+										<h3>Cununia civila</h3>
+										<h4 class="details"> incepand cu ora 14.00</h4>
+										<p>In gradina raiului<br /> Strada trandafirilor, nr 35, loc. Pildesti</p>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- round img -->
+						<div class="flex-item image fit round bulm">
+							<h1 class="titlu rotxt"> Program </h1>
+							<img class="img-responsive" src="img/pic11.jpg" alt="" />
+						</div>
+		
+						<div class="flex-item right">
+							<div class="row">
+								<!-- text -->
+								<div class="col-sm-9">
+									<div class="bul2">
+										<h3>Petrecerea</h3>
+										<h4 class="details"> incepand cu ora 17.00</h4>
+										<p>Hanul padurarilor<br /> tupilati</p>
+									</div>
+									<div class="bul2">
+										<h3>a doua strigare</h3>
+										<h4 class="details"> incepand cu ora 15.00</h4>
+										<p>stejar<br /> Pildesti</p>
+									</div>
+									<div class="bul2">
+										<h3>a doua strigare</h3>
+										<h4 class="details"> incepand cu ora 15.00</h4>
+										<p>stejar<br /> Pildesti</p>
+									</div>
+								</div>
+								<!-- background foto -->
+								<div class="col-sm-3">
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24 * 24 * 7));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = weeks + "saptamani " + days + "zile " + hours + "ore "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				
 
-</body>
+		<!-- photos -->
+		<div class="container" style="max-width: 2000px">
+			<div class="row justify-content-between">
+				<!-- stanga -->
+				<div class="col-3">
+				  <div class="columns">
+					<div class="image fit"><img src="img/pic01.jpg" alt="" /></div>
+					<div class="image fit"><img src="img/pic02.jpg" alt="" /></div>
+					<div class="image fit"><img src="img/pic03.jpg" alt="" /></div>
+					<div class="image fit"><img src="img/pic04.jpg" alt="" /></div>
+					<div class="image fit"><img src="img/pic10.jpg" alt="" /></div>
+				  </div>
+				</div>
+
+				<!-- mijloc -->
+				<div class="col-6"> 
+					<!-- <hr style="border: 2px solid rgb(58, 8, 27)">
+					<hr style="border: 2px solid rgb(92, 49, 69)"> -->
+					<hr style="border: 2px solid rgb(212, 199, 205)">
+					<h2 class="details"> Cum ne-am cunoscut? 
+						Ce ne uneste? 
+						parinti 
+						nasi 
+						noi 
+						voi   
+						oamenii fara de care nu am mai fii aici</h2>
+					<h1 class="titlu"> Titlu 1</h1>
+					<p class="paragraf">
+						Aici va fi paragraful 1. 
+						texte textetextet extetexte textetextetexte texte textetexte
+						texte textetextet extetexte textetextetexte texte textetexte
+					</p>
+					<h1 class="titlu"> Titlu 2</h1>
+					<p class="paragraf">
+						Aici va fi paragraful 2. 
+						texte textetextet extetexte textetextetexte texte textetexte
+						texte textetextet extetexte textetextetexte texte textetexte
+					</p>
+
+
+					<hr style="border: 2px solid rgb(212, 199, 205)">
+					<!-- <hr style="border: 2px solid rgb(92, 49, 69)">
+					<hr style="border: 2px solid rgb(58, 8, 27)"> -->
+				  </div>
+
+				<!-- dreapta -->
+				  <div class="col-3">
+					<div class="columns">
+					  <div class="image fit"><img src="img/pic05.jpg" alt="" /></div>
+					  <div class="image fit"><img src="img/pic06.jpg" alt="" /></div>
+					  <div class="image fit"><img src="img/pic07.jpg" alt="" /></div>
+					  <div class="image fit"><img src="img/pic08.jpg" alt="" /></div>
+					  <div class="image fit"><img src="img/pic09.jpg" alt="" /></div>
+					</div>
+				  </div>
+
+			</div>
+		</div>
+
+
+
+
+		<!-- Footer/informatii -->
+			<footer id="footer">
+				<a href="#" class="info"><span>Contact</span></a>
+				<div class="inner">
+					
+					<div class="copyright" style="text-align: right;">
+						<h3 >Paul</h3>
+						<ul class="icons">
+							<div>
+								<p class="blur inline"> 0765 850 335 </p>
+								<li class="inline"><a href="tel:0747299624" style="text-decoration : none; font-size:22px" class="icon fa-mobile">
+									<span class="label"></span>
+								</a></li>
+								
+							</div>
+							<div>
+								<p class="blur inline"> Sociu Paul </p>
+								<li class="inline"><a href="https://www.facebook.com/sociu.paul.9" 
+									style="text-decoration : none; font-size:15px" target="_blank" class="icon fa-facebook">
+									<span class="label">Facebook</span>
+								</a></li>
+								
+							</div>
+						</ul>
+					</div>
+					
+					<div class="content copyright" style="text-align: center;">
+						<h3>Date contact</h3>
+						<p> Va rugam sa ne confirmati prezenta <br> pana la 01 iulie 2020. </p>
+					</div>
+
+					<div class="copyright">
+						<h3 >Alina</h3>
+						<ul class="icons">
+							<div>
+								<li class="inline"><a href="tel:0747299624" style="text-decoration : none; font-size:22px" class="icon fa fa-mobile fa-7">
+									<span class="label"></span>
+								</a></li>
+								<p class="blur inline"> 0747 299 624 </p>
+							</div>
+							<div>
+								<li class="inline"><a href="https://www.facebook.com/dumitru.alina.b" 
+									style="text-decoration : none; font-size:15px" target="_blank" class="icon fa-facebook">
+									<span class="label">Facebook</span>
+								</a></li>
+								<p class="blur inline"> Dumitru Alina Cristiana </p>
+							</div>
+						</ul>
+					</div>
+				</div>
+				&copy; ... ..: <a href="#">..</a>. ..: <a href="#">..</a>.
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
